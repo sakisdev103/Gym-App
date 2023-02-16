@@ -45,7 +45,7 @@ const Exersice = () => {
                 <div className="card" key={index}>
                   <h3>{category.Name}</h3>
                   <div className="add-exersice-container">
-                    <Link to={`add/${category.Name}`} className='add-exersice'>Add</Link>
+                    <Link to={`/Gym-App/add/${category.Name}`} className='add-exersice'>Add</Link>
                   </div>
                 </div>
               )

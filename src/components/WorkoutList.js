@@ -13,7 +13,7 @@ const WorkoutList = () => {
   return (
     <>
         <div className="workout-list">
-            <Link to="/home" className='navigation'><i className="fa-solid fa-plus"></i></Link>
+            <Link to="/Gym-App/home" className='navigation'><i className="fa-solid fa-plus"></i></Link>
             <h3>{currentDate}</h3>
             {
                 getItems !== null &&
