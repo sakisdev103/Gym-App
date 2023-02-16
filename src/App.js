@@ -11,10 +11,10 @@ const App = () => {
     <>
         <BrowserRouter>
             <Routes>
-                <Route path="/" exact element={<WorkoutList />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="home/exersice/:id" element={<Exersice/>}/>
-                <Route path="home/exersice/:id/add/:id" element={<Add/>}/>
+                <Route path="Gym-App/" exact element={<WorkoutList />} />
+                <Route path="Gym-App/home" element={<Home />} />
+                <Route path="Gym-App/home/exersice/:id" element={<Exersice/>}/>
+                <Route path="Gym-App/home/exersice/:id/add/:id" element={<Add/>}/>
                 <Route path="*" element={<Error/>}/>
             </Routes>
         </BrowserRouter>
