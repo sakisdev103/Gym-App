@@ -5,7 +5,6 @@ import axios from 'axios';
 const Exersice = () => {
   const {id} = useParams();
   const [category, setCategory] = useState([]);
-  const [empty, setEmpty] = useState(false);
 
   //Fetching data from api (exersices)
   const fetchCategory = () =>{
@@ -29,12 +28,6 @@ const Exersice = () => {
     fetchCategory();
   },[])
 
-  //Checking if there are not exersices
-  setTimeout(()=>{
-    if(category.length === 0){
-      setEmpty(true);
-    }
-  }, 1000)
   return (
     <>
       {
@@ -54,7 +47,7 @@ const Exersice = () => {
         </div>
       }
       {
-        empty === true && 
+        category.length === 0 && 
         <div className="center">
           <h2>No exersices have been found.</h2>
         </div>
