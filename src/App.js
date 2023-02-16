@@ -11,10 +11,10 @@ const App = () => {
     <>
         <BrowserRouter>
             <Routes>
-                <Route path="https://sakisdev103.github.io/Gym-App/" exact element={<WorkoutList />} />
-                <Route path="https://sakisdev103.github.io/Gym-App/home" element={<Home />} />
-                <Route path="https://sakisdev103.github.io/Gym-App/home/exersice/:id" element={<Exersice/>}/>
-                <Route path="https://sakisdev103.github.io/Gym-App/home/exersice/:id/add/:id" element={<Add/>}/>
+                <Route path="/Gym-App/" exact element={<WorkoutList />} />
+                <Route path="/Gym-App/home" element={<Home />} />
+                <Route path="/Gym-App/home/exersice/:id" element={<Exersice/>}/>
+                <Route path="/Gym-App/home/exersice/:id/add/:id" element={<Add/>}/>
                 <Route path="*" element={<Error/>}/>
             </Routes>
         </BrowserRouter>
